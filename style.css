@@ -1,0 +1,226 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+[data-theme-light="light"]{
+  --switch-white: #ffffff;
+  --switch-pink: #cb6acb;
+  --switch-black: #000000;
+  --switch-e7ccea: #e7ccea;
+  background: url(bg-img.png);
+  background-size: contain;
+  transition: all 2s;
+}
+[data-theme-dark="dark"]{
+  --switch-white: black;
+  --switch-pink: #5e095e;
+  --switch-black: white;
+  --switch-e7ccea: #dd9fe4;
+  background: url(darkThemeBack.jpg);
+  background-size: contain;
+  transition: all 2s;
+}
+.dark-theme, .light-theme{
+  padding: 5px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.dark-theme{
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
+}
+.light-theme{
+  background: #ffffff;
+  color: #000000;
+  display: none;
+  border: 2px solid #ffffff;
+}
+
+p{
+  color: var(--switch-black);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.topNav{
+  width: 100%;
+  background-color: var(--switch-pink);
+}
+img.logo{
+  max-width: 200px;
+  margin: auto;
+}
+body{
+  background: var(--switch-white);
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.menu{
+  color: var(--switch-white);
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.wrapper{
+  color: var(--switch-white);
+  width: 450px;
+  height: 288px;
+  padding: 30px;
+  background:rgba( 255, 255, 255, 0.25 );
+box-shadow:0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter:blur( 4px );
+-webkit-backdrop-filter:blur( 4px );
+border-radius:10px;
+border:1px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 9px;
+  transition: height 0.2s ease;
+}
+.wrapper.active{
+  height: 537px;
+}
+.wrapper .upload-box{
+  height: 225px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px dashed #afafaf;
+}
+.wrapper.active .upload-box{
+  border: none;
+}
+.upload-box p{
+  font-size: 1.06rem;
+  margin-top: 20px;
+}
+.wrapper.active .upload-box p{
+  display: none;
+}
+.wrapper.active .upload-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.wrapper .content{
+  opacity: 0;
+  margin-top: 28px;
+  pointer-events: none;
+}
+.wrapper.active .content{
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.05s ease;
+}
+.content .row{
+  justify-content: space-between;
+  display: flex;
+}
+.content .row .column{
+  width: calc(100% / 2 - 15px);
+}
+.row .column label{
+  font-size: 1.06rem;
+}
+.sizes .column input{
+  width: 100%;
+  height: 49px;
+  outline: none;
+  margin-top: 7px;
+  padding: 0 15px;
+  font-size: 1.06rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+.sizes .column input:focus{
+  padding: 0 14px;
+  border: 2px solid var(--switch-e7ccea);
+}input
+.inputNum{
+  width: 100%;
+}
+.content .checkboxes{
+  margin-top: 20px;
+}
+.checkboxes .column{
+  display: flex;
+  align-items: center;
+}
+.checkboxes .column input{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  margin-right: 9px;
+  accent-color: #e5b9e5;
+}
+.content .download-btn{
+  width: 100%;
+  color: var(--switch-white);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.06rem;
+  border-radius: 5px;
+  padding: 15px 0;
+  margin: 30px 0 10px;
+  background: #e493e9;
+  text-transform: uppercase;
+}
+.footer-container{
+  min-height: 150px;
+  background:rgba( 255, 255, 255, 0.25 );
+  box-shadow:0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter:blur( 4px );
+  -webkit-backdrop-filter:blur( 4px );
+  border-radius:10px;
+  border:1px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 9px;
+  transition: height 0.2s ease;
+  width: 50%;
+  margin: 5px 0px;
+  color: #fff;
+}
+.line{
+	width: 30px;
+	height: 5px;
+	background-color: #dfaae1;
+}
+img.illust{
+  margin-top: 10px;
+}
+.fieldTxt{
+  font-size: 20px;
+  font-family: cursive;
+  color: var(--switch-white);
+}
+.field{
+  background-color: var(--switch-black);
+  border-radius: 17px;
+  line-height: 24px;
+  padding: 10px;
+  display: block;
+}
+
+.siteDesc{
+color: var(--switch-white); 
+}
+
+.footertxt, .footerTxt{
+  color: var(--switch-black); 
+}
+
+label{
+  color: var(--switch-black); 
+}

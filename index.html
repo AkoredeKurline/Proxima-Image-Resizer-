@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Proxima Image Resizer/title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="script.js" defer></script>
+    <script src="themeChanger.js" defer></script>
+  </head>
+  <body>
+    <div class="topNav">
+      
+      <center>
+      <img height="150px" width="50%" class="logo" src="proxima-imageresizer_logo.png" alt="">
+      
+      </center>
+      <center><div class="color-themes">
+        <button class="dark-theme">
+          <span class="material-symbols-outlined">
+            Switch to Dark mode
+        </span>
+        </button>
+        <button class="light-theme">
+          <span class="material-symbols-outlined">
+            Switch to Light mode
+        </span>
+        </button>
+        <br/>
+      </div></center>
+    </div>
+    <main>
+    <div class="wrapper">
+      <div class="upload-box">
+        <input type="file" accept="image/*" hidden>
+        <img width="100px" src="upload.svg" alt="">
+        <p>choose a file to resize</p>
+      </div>
+      <div class="content">
+        <div class="row sizes">
+          <div class="column width">
+            <label>Width</label>
+            <input class="inputNum" type="number">
+            <br/>
+          </div>
+          <div class="column height">
+            <label>Height</label>
+            <input class="inputNum" type="number">
+          </div>
+        </div>
+        <div class="row checkboxes">
+          <div class="column ratio">
+            <input type="checkbox" id="ratio" checked>
+            <label for="ratio">Lock aspect ratio</label>
+          </div>
+          <div class="column quality">
+            <input type="checkbox" id="quality">
+            <label for="quality">Reduce quality</label>
+          </div>
+        </div>
+        <button class="download-btn">Download resized Image</button>
+      </div>
+    </div>
+    </main>
+      <center>
+    <footer>
+        <div class="rightDiv">
+      <div class="footer-container">
+        <img class="illust" alt=""   width="170px" height="150" src="illustrator.png">
+      </div>
+      </div>
+      <br/>
+
+      <div class="row1-footer">
+      <div class="footer-container">
+     <img width="50%" class="illust" src="time.svg" alt="" />
+        <p class="footerTxt"> resize in one minute</p>
+      </div>
+      <br/>
+      
+      <div class="row2-footer">
+      <div class="footer-container">
+        <img width="50%" class="illust" src="easy.svg" alt="" />
+        <p class="footerTxt">Very easy to use</p>
+      </div>
+      </div>
+        
+      <div class="footer-container">
+        <img width="50%"class="illust" src="strong.svg" alt="" />
+        <p class="footertxt">Download your resized image </p>
+      </div>
+      </div>
+      </footer>
+      <br />
+      <center>
+          
+        <div class="field">
+        <div class="line">
+        </div>
+          <p class="fieldTxt"> 
+          Made by<b>"Proxima"</b>
+          </p>
+          <p class="siteDesc"> Have you ever been wondring on how you can resize all you images to reduce your device storage or for a particular purpose? don't worry <b>Proxima Image Resizer</b> got that.<br />
+          <b>Proxima Image Resizer (PIR)</b> is an open-source website for resizing images.
+          </p>
+        </div>
+        </center>
+        <img width="50%" height="100px" src="logo.png" alt="" />
+      </center>
+  </body>
+</html>
